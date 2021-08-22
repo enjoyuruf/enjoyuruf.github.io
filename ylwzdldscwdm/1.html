@@ -1,0 +1,1248 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width initial-scale=1'>
+    <title>原来我在地灵殿是宠物的吗</title>
+    <style type='text/css'>html {
+        overflow-x: initial !important;
+    }
+
+    :root {
+        --bg-color: #ffffff;
+        --text-color: #333333;
+        --select-text-bg-color: #B5D6FC;
+        --select-text-font-color: auto;
+        --monospace: "Lucida Console", Consolas, "Courier", monospace;
+        --title-bar-height: 20px;
+    }
+
+    .mac-os-11 {
+        --title-bar-height: 28px;
+    }
+
+    html {
+        font-size: 14px;
+        background-color: var(--bg-color);
+        color: var(--text-color);
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        -webkit-font-smoothing: antialiased;
+    }
+
+    body {
+        margin: 0px;
+        padding: 0px;
+        height: auto;
+        bottom: 0px;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        font-size: 1rem;
+        line-height: 1.42857;
+        overflow-x: hidden;
+        background: inherit;
+        tab-size: 4;
+    }
+
+    iframe {
+        margin: auto;
+    }
+
+    a.url {
+        word-break: break-all;
+    }
+
+    a:active, a:hover {
+        outline: 0px;
+    }
+
+    .in-text-selection, ::selection {
+        text-shadow: none;
+        background: var(--select-text-bg-color);
+        color: var(--select-text-font-color);
+    }
+
+    #write {
+        margin: 0px auto;
+        height: auto;
+        width: inherit;
+        word-break: normal;
+        overflow-wrap: break-word;
+        position: relative;
+        white-space: normal;
+        overflow-x: visible;
+        padding-top: 36px;
+    }
+
+    #write.first-line-indent p {
+        text-indent: 2em;
+    }
+
+    #write.first-line-indent li p, #write.first-line-indent p * {
+        text-indent: 0px;
+    }
+
+    #write.first-line-indent li {
+        margin-left: 2em;
+    }
+
+    .for-image #write {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    body.typora-export {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .typora-export .footnote-line, .typora-export li, .typora-export p {
+        white-space: pre-wrap;
+    }
+
+    .typora-export .task-list-item input {
+        pointer-events: none;
+    }
+
+    @media screen and (max-width: 500px) {
+        body.typora-export {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+
+        #write {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .CodeMirror-sizer {
+            margin-left: 0px !important;
+        }
+
+        .CodeMirror-gutters {
+            display: none !important;
+        }
+    }
+
+    #write li > figure:last-child {
+        margin-bottom: 0.5rem;
+    }
+
+    #write ol, #write ul {
+        position: relative;
+    }
+
+    img {
+        max-width: 100%;
+        vertical-align: middle;
+        image-orientation: from-image;
+    }
+
+    button, input, select, textarea {
+        color: inherit;
+        font: inherit;
+    }
+
+    input[type="checkbox"], input[type="radio"] {
+        line-height: normal;
+        padding: 0px;
+    }
+
+    *, ::after, ::before {
+        box-sizing: border-box;
+    }
+
+    #write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre {
+        width: inherit;
+    }
+
+    #write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p {
+        position: relative;
+    }
+
+    p {
+        line-height: inherit;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        break-after: avoid-page;
+        break-inside: avoid;
+        orphans: 4;
+    }
+
+    p {
+        orphans: 4;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    h3 {
+        font-size: 1.6rem;
+    }
+
+    h4 {
+        font-size: 1.4rem;
+    }
+
+    h5 {
+        font-size: 1.2rem;
+    }
+
+    h6 {
+        font-size: 1rem;
+    }
+
+    .md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .md-blockmeta {
+        color: rgb(204, 204, 204);
+        font-weight: 700;
+        font-style: italic;
+    }
+
+    a {
+        cursor: pointer;
+    }
+
+    sup.md-footnote {
+        padding: 2px 4px;
+        background-color: rgba(238, 238, 238, 0.7);
+        color: rgb(85, 85, 85);
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    sup.md-footnote a, sup.md-footnote a:hover {
+        color: inherit;
+        text-transform: inherit;
+        text-decoration: inherit;
+    }
+
+    #write input[type="checkbox"] {
+        cursor: pointer;
+        width: inherit;
+        height: inherit;
+    }
+
+    figure {
+        overflow-x: auto;
+        margin: 1.2em 0px;
+        max-width: calc(100% + 16px);
+        padding: 0px;
+    }
+
+    figure > table {
+        margin: 0px;
+    }
+
+    tr {
+        break-inside: avoid;
+        break-after: auto;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    table {
+        border-collapse: collapse;
+        border-spacing: 0px;
+        width: 100%;
+        overflow: auto;
+        break-inside: auto;
+        text-align: left;
+    }
+
+    table.md-table td {
+        min-width: 32px;
+    }
+
+    .CodeMirror-gutters {
+        border-right: 0px;
+        background-color: inherit;
+    }
+
+    .CodeMirror-linenumber {
+        user-select: none;
+    }
+
+    .CodeMirror {
+        text-align: left;
+    }
+
+    .CodeMirror-placeholder {
+        opacity: 0.3;
+    }
+
+    .CodeMirror pre {
+        padding: 0px 4px;
+    }
+
+    .CodeMirror-lines {
+        padding: 0px;
+    }
+
+    div.hr:focus {
+        cursor: none;
+    }
+
+    #write pre {
+        white-space: pre-wrap;
+    }
+
+    #write.fences-no-line-wrapping pre {
+        white-space: pre;
+    }
+
+    #write pre.ty-contain-cm {
+        white-space: normal;
+    }
+
+    .CodeMirror-gutters {
+        margin-right: 4px;
+    }
+
+    .md-fences {
+        font-size: 0.9rem;
+        display: block;
+        break-inside: avoid;
+        text-align: left;
+        overflow: visible;
+        white-space: pre;
+        background: inherit;
+        position: relative !important;
+    }
+
+    .md-diagram-panel {
+        width: 100%;
+        margin-top: 10px;
+        text-align: center;
+        padding-top: 0px;
+        padding-bottom: 8px;
+        overflow-x: auto;
+    }
+
+    #write .md-fences.mock-cm {
+        white-space: pre-wrap;
+    }
+
+    .md-fences.md-fences-with-lineno {
+        padding-left: 0px;
+    }
+
+    #write.fences-no-line-wrapping .md-fences.mock-cm {
+        white-space: pre;
+        overflow-x: auto;
+    }
+
+    .md-fences.mock-cm.md-fences-with-lineno {
+        padding-left: 8px;
+    }
+
+    .CodeMirror-line, twitterwidget {
+        break-inside: avoid;
+    }
+
+    .footnotes {
+        opacity: 0.8;
+        font-size: 0.9rem;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+
+    .footnotes + .footnotes {
+        margin-top: 0px;
+    }
+
+    .md-reset {
+        margin: 0px;
+        padding: 0px;
+        border: 0px;
+        outline: 0px;
+        vertical-align: top;
+        background: 0px 0px;
+        text-decoration: none;
+        text-shadow: none;
+        float: none;
+        position: static;
+        width: auto;
+        height: auto;
+        white-space: nowrap;
+        cursor: inherit;
+        -webkit-tap-highlight-color: transparent;
+        line-height: normal;
+        font-weight: 400;
+        text-align: left;
+        box-sizing: content-box;
+        direction: ltr;
+    }
+
+    li div {
+        padding-top: 0px;
+    }
+
+    blockquote {
+        margin: 1rem 0px;
+    }
+
+    li .mathjax-block, li p {
+        margin: 0.5rem 0px;
+    }
+
+    li blockquote {
+        margin: 1rem 0px;
+    }
+
+    li {
+        margin: 0px;
+        position: relative;
+    }
+
+    blockquote > :last-child {
+        margin-bottom: 0px;
+    }
+
+    blockquote > :first-child, li > :first-child {
+        margin-top: 0px;
+    }
+
+    .footnotes-area {
+        color: rgb(136, 136, 136);
+        margin-top: 0.714rem;
+        padding-bottom: 0.143rem;
+        white-space: normal;
+    }
+
+    #write .footnote-line {
+        white-space: pre-wrap;
+    }
+
+    @media print {
+        body, html {
+            border: 1px solid transparent;
+            height: 99%;
+            break-after: avoid;
+            break-before: avoid;
+            font-variant-ligatures: no-common-ligatures;
+        }
+
+        #write {
+            margin-top: 0px;
+            padding-top: 0px;
+            border-color: transparent !important;
+        }
+
+        .typora-export * {
+            -webkit-print-color-adjust: exact;
+        }
+
+        .typora-export #write {
+            break-after: avoid;
+        }
+
+        .typora-export #write::after {
+            height: 0px;
+        }
+
+        .is-mac table {
+            break-inside: avoid;
+        }
+    }
+
+    .footnote-line {
+        margin-top: 0.714em;
+        font-size: 0.7em;
+    }
+
+    a img, img a {
+        cursor: pointer;
+    }
+
+    pre.md-meta-block {
+        font-size: 0.8rem;
+        min-height: 0.8rem;
+        white-space: pre-wrap;
+        background: rgb(204, 204, 204);
+        display: block;
+        overflow-x: hidden;
+    }
+
+    p > .md-image:only-child:not(.md-img-error) img, p > img:only-child {
+        display: block;
+        margin: auto;
+    }
+
+    #write.first-line-indent p > .md-image:only-child:not(.md-img-error) img {
+        left: -2em;
+        position: relative;
+    }
+
+    p > .md-image:only-child {
+        display: inline-block;
+        width: 100%;
+    }
+
+    #write .MathJax_Display {
+        margin: 0.8em 0px 0px;
+    }
+
+    .md-math-block {
+        width: 100%;
+    }
+
+    .md-math-block:not(:empty)::after {
+        display: none;
+    }
+
+    .MathJax_ref {
+        fill: currentcolor;
+    }
+
+    [contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus {
+        outline: 0px;
+        box-shadow: none;
+    }
+
+    .md-task-list-item {
+        position: relative;
+        list-style-type: none;
+    }
+
+    .task-list-item.md-task-list-item {
+        padding-left: 0px;
+    }
+
+    .md-task-list-item > input {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        margin-left: -1.2em;
+        margin-top: calc(1em - 10px);
+        border: none;
+    }
+
+    .math {
+        font-size: 1rem;
+    }
+
+    .md-toc {
+        min-height: 3.58rem;
+        position: relative;
+        font-size: 0.9rem;
+        border-radius: 10px;
+    }
+
+    .md-toc-content {
+        position: relative;
+        margin-left: 0px;
+    }
+
+    .md-toc-content::after, .md-toc::after {
+        display: none;
+    }
+
+    .md-toc-item {
+        display: block;
+        color: rgb(65, 131, 196);
+    }
+
+    .md-toc-item a {
+        text-decoration: none;
+    }
+
+    .md-toc-inner:hover {
+        text-decoration: underline;
+    }
+
+    .md-toc-inner {
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .md-toc-h1 .md-toc-inner {
+        margin-left: 0px;
+        font-weight: 700;
+    }
+
+    .md-toc-h2 .md-toc-inner {
+        margin-left: 2em;
+    }
+
+    .md-toc-h3 .md-toc-inner {
+        margin-left: 4em;
+    }
+
+    .md-toc-h4 .md-toc-inner {
+        margin-left: 6em;
+    }
+
+    .md-toc-h5 .md-toc-inner {
+        margin-left: 8em;
+    }
+
+    .md-toc-h6 .md-toc-inner {
+        margin-left: 10em;
+    }
+
+    @media screen and (max-width: 48em) {
+        .md-toc-h3 .md-toc-inner {
+            margin-left: 3.5em;
+        }
+
+        .md-toc-h4 .md-toc-inner {
+            margin-left: 5em;
+        }
+
+        .md-toc-h5 .md-toc-inner {
+            margin-left: 6.5em;
+        }
+
+        .md-toc-h6 .md-toc-inner {
+            margin-left: 8em;
+        }
+    }
+
+    a.md-toc-inner {
+        font-size: inherit;
+        font-style: inherit;
+        font-weight: inherit;
+        line-height: inherit;
+    }
+
+    .footnote-line a:not(.reversefootnote) {
+        color: inherit;
+    }
+
+    .md-attr {
+        display: none;
+    }
+
+    .md-fn-count::after {
+        content: ".";
+    }
+
+    code, pre, samp, tt {
+        font-family: var(--monospace);
+    }
+
+    kbd {
+        margin: 0px 0.1em;
+        padding: 0.1em 0.6em;
+        font-size: 0.8em;
+        color: rgb(36, 39, 41);
+        background: rgb(255, 255, 255);
+        border: 1px solid rgb(173, 179, 185);
+        border-radius: 3px;
+        box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset;
+        white-space: nowrap;
+        vertical-align: middle;
+    }
+
+    .md-comment {
+        color: rgb(162, 127, 3);
+        opacity: 0.8;
+        font-family: var(--monospace);
+    }
+
+    code {
+        text-align: left;
+        vertical-align: initial;
+    }
+
+    a.md-print-anchor {
+        white-space: pre !important;
+        border-width: initial !important;
+        border-style: none !important;
+        border-color: initial !important;
+        display: inline-block !important;
+        position: absolute !important;
+        width: 1px !important;
+        right: 0px !important;
+        outline: 0px !important;
+        background: 0px 0px !important;
+        text-decoration: initial !important;
+        text-shadow: initial !important;
+    }
+
+    .md-inline-math .MathJax_SVG .noError {
+        display: none !important;
+    }
+
+    .html-for-mac .inline-math-svg .MathJax_SVG {
+        vertical-align: 0.2px;
+    }
+
+    .md-math-block .MathJax_SVG_Display {
+        text-align: center;
+        margin: 0px;
+        position: relative;
+        text-indent: 0px;
+        max-width: none;
+        max-height: none;
+        min-height: 0px;
+        min-width: 100%;
+        width: auto;
+        overflow-y: hidden;
+        display: block !important;
+    }
+
+    .MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display {
+        width: auto;
+        margin: inherit;
+        display: inline-block !important;
+    }
+
+    .MathJax_SVG .MJX-monospace {
+        font-family: var(--monospace);
+    }
+
+    .MathJax_SVG .MJX-sans-serif {
+        font-family: sans-serif;
+    }
+
+    .MathJax_SVG {
+        display: inline;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        zoom: 90%;
+        text-indent: 0px;
+        text-align: left;
+        text-transform: none;
+        letter-spacing: normal;
+        word-spacing: normal;
+        overflow-wrap: normal;
+        white-space: nowrap;
+        float: none;
+        direction: ltr;
+        max-width: none;
+        max-height: none;
+        min-width: 0px;
+        min-height: 0px;
+        border: 0px;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .MathJax_SVG * {
+        transition: none 0s ease 0s;
+    }
+
+    .MathJax_SVG_Display svg {
+        vertical-align: middle !important;
+        margin-bottom: 0px !important;
+        margin-top: 0px !important;
+    }
+
+    .os-windows.monocolor-emoji .md-emoji {
+        font-family: "Segoe UI Symbol", sans-serif;
+    }
+
+    .md-diagram-panel > svg {
+        max-width: 100%;
+    }
+
+    [lang="flow"] svg, [lang="mermaid"] svg {
+        max-width: 100%;
+        height: auto;
+    }
+
+    [lang="mermaid"] .node text {
+        font-size: 1rem;
+    }
+
+    table tr th {
+        border-bottom: 0px;
+    }
+
+    video {
+        max-width: 100%;
+        display: block;
+        margin: 0px auto;
+    }
+
+    iframe {
+        max-width: 100%;
+        width: 100%;
+        border: none;
+    }
+
+    .highlight td, .highlight tr {
+        border: 0px;
+    }
+
+    mark {
+        background: rgb(255, 255, 0);
+        color: rgb(0, 0, 0);
+    }
+
+    .md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong {
+        color: inherit;
+    }
+
+    mark .md-meta {
+        color: rgb(0, 0, 0);
+        opacity: 0.3 !important;
+    }
+
+    @media print {
+        .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 {
+            break-inside: avoid;
+        }
+    }
+
+    .md-diagram-panel .messageText {
+        stroke: none !important;
+    }
+
+    .md-diagram-panel .start-state {
+        fill: var(--node-fill);
+    }
+
+    .md-diagram-panel .edgeLabel rect {
+        opacity: 1 !important;
+    }
+
+    .md-require-zoom-fix foreignobject {
+        font-size: var(--mermaid-font-zoom);
+    }
+
+
+    html {
+        font-size: 19px;
+    }
+
+    html, body {
+        margin: auto;
+        background: #fdf6e3;
+    }
+
+    body {
+        font-family: "Vollkorn", Palatino, Times;
+        color: #333;
+        line-height: 1.4;
+        text-align: justify;
+    }
+
+    #write {
+        max-width: 960px;
+        margin: 0 auto;
+        margin-bottom: 2em;
+        line-height: 1.53;
+        padding-top: 40px;
+    }
+
+    @media only screen and (min-width: 1400px) {
+        #write {
+            max-width: 1100px;
+        }
+    }
+
+    @media print {
+        html {
+            font-size: 13px;
+        }
+    }
+
+    /* Typography
+    -------------------------------------------------------- */
+
+    #write > h1:first-child,
+    h1 {
+        margin-top: 1.6em;
+        font-weight: normal;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    h2 {
+        margin-top: 2em;
+        font-weight: normal;
+    }
+
+    h3 {
+        font-weight: normal;
+        font-style: italic;
+        margin-top: 3em;
+    }
+
+    h1,
+    h2,
+    h3 {
+        text-align: center;
+    }
+
+    h2:after {
+        border-bottom: 1px solid #2f2f2f;
+        content: '';
+        width: 100px;
+        display: block;
+        margin: 0 auto;
+        height: 1px;
+    }
+
+    h1 + h2, h2 + h3 {
+        margin-top: 0.83em;
+    }
+
+    p,
+    .mathjax-block {
+        margin-top: 0;
+        -webkit-hypens: auto;
+        -moz-hypens: auto;
+        hyphens: auto;
+    }
+
+    ul {
+        list-style: square;
+        padding-left: 1.2em;
+    }
+
+    ol {
+        padding-left: 1.2em;
+    }
+
+    blockquote {
+        margin-left: 1em;
+        padding-left: 1em;
+        border-left: 1px solid #ddd;
+    }
+
+    code,
+    pre {
+        font-family: "Consolas", "Menlo", "Monaco", monospace, serif;
+        font-size: .9em;
+        background: white;
+    }
+
+    .md-fences {
+        margin-left: 1em;
+        padding-left: 1em;
+        border: 1px solid #ddd;
+        padding-bottom: 8px;
+        padding-top: 6px;
+        margin-bottom: 1.5em;
+    }
+
+    a {
+        color: #2484c1;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    a img {
+        border: none;
+    }
+
+    h1 a,
+    h1 a:hover {
+        color: #333;
+        text-decoration: none;
+    }
+
+    hr {
+        color: #ddd;
+        height: 1px;
+        margin: 2em 0;
+        border-top: solid 1px #ddd;
+        border-bottom: none;
+        border-left: 0;
+        border-right: 0;
+    }
+
+    .ty-table-edit {
+        background: #ededed;
+        padding-top: 4px;
+    }
+
+    table {
+        margin-bottom: 1.333333rem
+    }
+
+    table th,
+    table td {
+        padding: 8px;
+        line-height: 1.333333rem;
+        vertical-align: top;
+        border-top: 1px solid #ddd
+    }
+
+    table th {
+        font-weight: bold
+    }
+
+    table thead th {
+        vertical-align: bottom
+    }
+
+    table caption + thead tr:first-child th,
+    table caption + thead tr:first-child td,
+    table colgroup + thead tr:first-child th,
+    table colgroup + thead tr:first-child td,
+    table thead:first-child tr:first-child th,
+    table thead:first-child tr:first-child td {
+        border-top: 0
+    }
+
+    table tbody + tbody {
+        border-top: 2px solid #ddd
+    }
+
+    .task-list {
+        padding: 0;
+    }
+
+    .md-task-list-item {
+        padding-left: 1.6rem;
+    }
+
+    .md-task-list-item > input:before {
+        content: '\221A';
+        display: inline-block;
+        width: 1.33333333rem;
+        height: 1.6rem;
+        vertical-align: middle;
+        text-align: center;
+        color: #ddd;
+        background-color: #fefefe;
+    }
+
+    .md-task-list-item > input:checked:before,
+    .md-task-list-item > input[checked]:before {
+        color: inherit;
+    }
+
+    .md-tag {
+        color: inherit;
+        font: inherit;
+    }
+
+    #write pre.md-meta-block {
+        min-height: 35px;
+        padding: 0.5em 1em;
+    }
+
+    #write pre.md-meta-block {
+        white-space: pre;
+        background: #f8f8f8;
+        border: 0px;
+        color: #999;
+
+        width: 100vw;
+        max-width: calc(100% + 60px);
+        margin-left: -30px;
+        border-left: 30px #f8f8f8 solid;
+        border-right: 30px #f8f8f8 solid;
+
+        margin-bottom: 2em;
+        margin-top: -1.3333333333333rem;
+        padding-top: 26px;
+        padding-bottom: 10px;
+        line-height: 1.8em;
+        font-size: 0.9em;
+        font-size: 0.76em;
+        padding-left: 0;
+    }
+
+    .md-img-error.md-image > .md-meta {
+        vertical-align: bottom;
+    }
+
+    #write > h5.md-focus:before {
+        top: 2px;
+    }
+
+    .md-toc {
+        margin-top: 40px;
+    }
+
+    .md-toc-content {
+        padding-bottom: 20px;
+    }
+
+    .outline-expander:before {
+        color: inherit;
+        font-size: 14px;
+        top: auto;
+        content: "\f0da";
+        font-family: FontAwesome;
+    }
+
+    .outline-expander:hover:before,
+    .outline-item-open > .outline-item > .outline-expander:before {
+        content: "\f0d7";
+    }
+
+    /** source code mode */
+    #typora-source {
+        font-family: Courier, monospace;
+        color: #6A6A6A;
+    }
+
+    .html-for-mac #typora-sidebar {
+        -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    }
+
+    .cm-s-typora-default .cm-header,
+    .cm-s-typora-default .cm-property,
+    .CodeMirror.cm-s-typora-default div.CodeMirror-cursor {
+        color: #428bca;
+    }
+
+    .cm-s-typora-default .cm-atom, .cm-s-typora-default .cm-number {
+        color: #777777;
+    }
+
+    .typora-node .file-list-item-parent-loc,
+    .typora-node .file-list-item-time,
+    .typora-node .file-list-item-summary {
+        font-family: arial, sans-serif;
+    }
+
+    .md-task-list-item > input {
+        margin-left: -1.3em;
+        margin-top: calc(1rem - 12px);
+    }
+
+    .md-mathjax-midline {
+        background: #fafafa;
+    }
+
+    .md-fences .code-tooltip {
+        bottom: -2em !important;
+    }
+
+    .dropdown-menu .divider {
+        border-color: #e5e5e5;
+    }
+
+    :root {
+        --mermaid-font-zoom: 1.25em;
+    }
+    </style>
+</head>
+<body oncopy="return false" oncut="return false;" onpaste="return false" onselectstart="return false" class='typora-export os-windows'>
+<div id='write' class=''>
+<h1 >第1章 是这样吗</h1>
+<p>　　睁开双眼，进入视线的景象模糊不清，好像面前摆了一块雾镜。</p>
+<p>　　强烈的失重感萦绕在脑间挥之不去，让人忍不住怀疑自己是否还活着。</p>
+<p>　　自己是谁，自己在哪，自己要做什么，什么也回想不起来。</p>
+<p>　　不过身体还有触觉，手掌能触摸到的，在自己身下是一张沙发，十分柔软，像是填满了棉花。</p>
+<p>　　自己应该是趴在这里睡着了。</p>
+<p>　　向前方看去，那有一位紫色轮廓的女性，她也坐在这张长沙发上，双手放在膝上，时时翻动着什么。</p>
+<p>　　应该是书吧。</p>
+<p>　　匍匐着，想要靠近些看，结果中途就被发现了。</p>
+<p>　　那紫色的轮廓朝向自己，伸出了手掌。</p>
+<p>　　虽然是这样不明所以的环境，是这样不清所属的人，但自己却没有觉得害怕，反倒十分安心。</p>
+<p>　　“阿白，你醒了吗？”</p>
+<p>　　手掌随着轻柔的话语落在头上，那是十分熟悉的感觉，像太阳公公一样温暖。</p>
+<p>　　阿白，是在叫我吗？</p>
+<p>　　沉重的脑袋在其抚摸下变得轻松，视线也逐渐明晰。</p>
+<p>　　映照在眼睛中的，是一位极美丽的少女，紫色的短发下配以一双懒散的深红眼眸，身着闲宜的家居衣裙。</p>
+<p>　　虽然应该说是少女却仿佛散发着十分成熟、乃至可称为母性的光辉。可如果看到她褶边短袜下的粉红色拖鞋，就会觉得她即俏皮又可爱。</p>
+<p>　　「觉，读心妖怪，地灵殿的一家之主。」</p>
+<p>　　脑袋里突然冒出这样词条。</p>
+<p>　　阿白眨眨眼睛，叫了眼前的人一声。</p>
+<p>　　“觉？”</p>
+<p>　　“嗯，我在这里，如果有事，就与我说。”</p>
+<p>　　温柔清脆的回应。</p>
+<p>　　阿白蹲坐在沙发上，怔怔地看着她，好像有什么想说，但又好像没什么要说。</p>
+<p>　　忽然地，又觉得自己不应该打扰认真看书的人。</p>
+<p>　　他转头向周围看去，借由墙上散发温和光芒的挂灯，看见一列列装满书的书架装满了这片空间。</p>
+<p>　　这里是图书馆，或许自己也该看书。</p>
+<p>　　这样想着，阿白趴在沙发剑的靠背上，向最近的书架伸手。</p>
+<p>　　没有够到，因为即便是最近的书架，也起码有三只手的距离。</p>
+<p>　　但阿白既不放弃，也不过去拿，仅仅是趴在那里。</p>
+<p>　　感觉自己应该看书，但对这件事没有一定要做到的想法，但也没有其它想做的事情。</p>
+<p>　　忽然地，书架上的一本书飞到伸出的手中。</p>
+<p>　　阿白震惊地看着自己右手，用力掂了掂，确定这不是幻觉。</p>
+<p>　　——难道说，自己其实很厉害、很不得了的人物？</p>
+<p>　　再伸出左手，瞪圆眼睛盯着书架，在眼睛酸得不行时，书架上的书终于动了，颤颤巍巍的飞过来……最后敲在阿白的头上。</p>
+<p>　　——这是自己对能力的操控不到家吗？</p>
+<p>　　阿白疑惑地从头上取下书，忽然好像听到旁边传来一声轻笑。</p>
+<p>　　转头望去，只看见觉还是和之前一样安静地看书，手指轻轻摩挲纸面，好像正到精彩的地方。</p>
+<p>　　是错觉吗？</p>
+<p>　　阿白收回视线，想要再尝试一次隔空取书……原本应是如此的。</p>
+<p>　　在转过头的瞬间，他又立马转回来，正好对上了觉猝不及防的眼睛。</p>
+<p>　　觉也没想到阿白会突然回头，两只眼睛扑闪扑闪了好一阵，然后又故作镇定，眼睛与脖子以一个极其缓慢的速度转回原位，似乎想证明自己只是像分子一样进行无规律的布朗运动，并没有看着谁或戏弄谁。</p>
+<p>　　阿白不明所以地看着她，这样鸵鸟抢地的行为有什么意义呢？</p>
+<p>　　似乎读到阿白心中所想，觉的俏脸又红了一分，但她仍执拗地装作无存在感的空气分子。</p>
+<p>　　谁也没办法叫醒装作睡觉的人……但如果粗暴一点的话。</p>
+<p>　　阿白的本能突然涌起一股冲动，他起身，站在觉的面前，在她先是疑惑再是害怕的目光中将她以公主抱的姿势抱起来。</p>
+<p>　　觉躺在阿白的双臂上，双手抓着书遮在自己半张脸上，戒备地问他：“你想要做什么？”</p>
+<p>　　阿白不答，对觉露出一抹灿烂的笑容，随后在她的惊呼中起跳，像欢呼一样将她高高地举起来。</p>
+<p>　　“好耶！”</p>
+<p>　　没什么特别意味，也没什么特别原因，但抱起觉这件事本身就好像使人无比快乐。</p>
+<p>　　“好耶，好耶，好耶……”</p>
+<p>　　起跳又落下，然后再次起跳，强烈的不稳定感让觉没抓稳手里的书又踢飞了脚上的拖鞋，只能双手揽住阿白的脖子。</p>
+<p>　　“快停下来，这样很危险的。”她喊道。</p>
+<p>　　被说了，但阿白并没有听进去，他感觉全身充满了力量，仿佛什么都做得到，持续多久都可以。</p>
+<p>　　”你再不停下来……我可要生气了，哇——“</p>
+<p>　　阿白突然跳得特别高，几乎要碰到天花板，然而落到地面时，脚掌一滑，整个人向后仰去。</p>
+<p>　　要摔倒了，会受伤。阿白清楚地意识到这一点，他双手右手将觉紧紧地抱在怀里，并且咬紧了牙根。</p>
+<p>　　但等待了好久，预想的撞击没有来临。</p>
+<p>　　阿白睁开眼睛，发现自己正悬浮在空中，距离地面还有十多厘米。</p>
+<p>　　“已经没事了，所以，先放开我吧。”觉在阿白的怀里发出了闷闷的声音。</p>
+<p>　　阿白这才想起自己手臂还紧紧锁着觉，当即放开了她。</p>
+<p>　　终于没了束缚，觉起身侧坐在他的肚子上，呼吸了 一口新鲜空气，然后对他说：“我说过的，很危险吧。”</p>
+<p>　　依靠对方力量浮在空中的阿白完全没有反驳余地。</p>
+<p>　　“对不起。“他诚心诚意的认错了。</p>
+<p>　　听到这句话，觉反而更生气了，她伸手揪住了他的脸，并且拉长说：“我最讨厌你说这三个字了，既然知道要说对不起，那从一开始就不要做，明白了吗？”</p>
+<p>　　“明白了。”阿白十分郑重地点了点头。</p>
+<p>　　真的明白了吗？觉盯着他眼睛，尝试读出什么。</p>
+<p>　　——什么都没有想。</p>
+<p>　　一股无力感蔓延上她的心头，读心妖怪的能力对于脑袋空空的行动派并不怎么管用。</p>
+<p>　　……</p>
+<p>　　经过这样一番胡闹，觉也感到累了，没有再看书的想法。</p>
+<p>　　“今天就到这里吧，该休息了。”</p>
+<p>　　她牵着阿白的手走出图书馆，来到一个房间。</p>
+<p>　　里面有一张大到足够让人滚来滚去的床，还有一个好像为大型动物准备的小屋。</p>
+<p>　　“要好好地睡在床上，知道吗？”觉对阿白叮嘱道。</p>
+<p>　　阿白有些诧异，这不是常识吗？。</p>
+<p>　　“我知道了。”姑且他还是好好地答应了。</p>
+<p>　　觉看了他几眼，没有再说什么，揉了揉他的头就离开了。</p>
+<p>　　阿白也感到困了，他打着哈欠钻进了小屋里面。</p>
+<p>　　唉，为什么会到这里面来，我不是要睡在床上吗？</p>
+<p>　　这里不就是床吗？很温暖，还有熟悉的味道，让人安心……zzzzz</p>
+<p>　　阿白睡着了。</p>
+<div id="chapter-control">
+    <a onclick="alert('没有上一章')">上一章</a>
+    <a href="index.html">目录</a>
+    <a onclick="alert('没有下一章')">下一章</a>
+</div>
+
+<div id="author">
+    <hr />
+    <p><strong>文章作者：</strong>虚空大灾变</p>
+    <p><strong>编辑时间：</strong>2014/06/01</p>
+    <p><img src="/img/dajiejie.jpg" referrerpolicy="no-referrer" alt="虚空大灾变"></p>
+    <hr />
+</div>
+</div>
+
+
+<script>
+    document.oncontextmenu=new Function("event.returnValue=false");
+    document.onselectstart=new Function("event.returnValue=false");
+</script>
+</body>
+</html>
